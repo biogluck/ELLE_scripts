@@ -1,0 +1,1 @@
+magick convert -density 300 -trim input.pdf output.jpg

@@ -92,8 +92,6 @@ def update_fields(fc):
         ec_name = EC_DICT.get(ec_code)
         if ec_name:
             row.setValue("NAME_EC", ec_name)
-        else:
-            print "Wrong CODE_EC"
         if expert_name:
             expert_code = experts.get(expert_name)
         if not polygon_number:

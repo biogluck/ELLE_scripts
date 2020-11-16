@@ -81,7 +81,7 @@ in folder with `.gdb` folder(s).
 
 ---
 
-## 5. `update_numbers_in_habitat_poly.py`
+## 5. `update_fields.py`
 
 Updates `"FORM_NUMBER"` and `"POLYGON_NUMBER"` fields in `Habitat_poly` Feature Class in every `.gdb` in directory where You run this script.
 
@@ -89,6 +89,7 @@ Requires `experts.csv` with correct names and codes of experts.
 
 The script:
 
+* calculates `EC_NAME` for records with `CODE_EC`
 * if `"POLYGON_NUMBER"` is number (e.g. `42`), corrects `"POLYGON_NUMBER"` to `XXYYZZZ_42`, where `XXYYZZZ` is experts code
 * for features without `"FORM_NUMBER"` if polygon is not `NOT_EC` generates `"FORM_NUMBER"` using `"POLYGON_NUMBER"`
 * generates "experts prefix" for `"FORM_NUMBER"` without "experts prefix" 
